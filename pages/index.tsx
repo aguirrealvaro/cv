@@ -1,10 +1,10 @@
-import { Layout } from "@/components";
+import { Banner } from "@/components";
 
 const Home = () => {
   return (
-    <Layout title="index">
-      <div>Custom Next 13 Template</div>
-    </Layout>
+    <div>
+      <Banner />
+    </div>
   );
 };
 

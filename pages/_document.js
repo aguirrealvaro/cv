@@ -30,7 +30,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
-        <Head>{/* <link rel="icon" href="/favicon.ico" /> */}</Head>
+        <Head>
+          <title>CV | Alvaro Aguirre</title>
+        </Head>
         <body>
           <Main />
           <NextScript />
