@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { Banner } from "@/components";
+import { About, Banner } from "@/components";
 import { Wrapper } from "@/css";
 
 const Home = () => {
@@ -11,7 +11,9 @@ const Home = () => {
       </Head>
       <Banner />
       <Main>
-        <Wrapper>asd</Wrapper>
+        <Wrapper>
+          <About />
+        </Wrapper>
       </Main>
     </Container>
   );
@@ -28,5 +30,6 @@ const Container = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  background-color: ${({ theme }) => theme.assets.bgPrimary};
+  //background-color: ${({ theme }) => theme.assets.bgPrimary};
+  background-color: ${({ theme }) => theme.colors.grey[3]}; // TO DO: delete
 `;
