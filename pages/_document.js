@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -30,9 +30,6 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
-        <Head>
-          <title>CV | Alvaro Aguirre</title>
-        </Head>
         <body>
           <Main />
           <NextScript />

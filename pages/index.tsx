@@ -1,10 +1,14 @@
+import Head from "next/head";
 import { Banner } from "@/components";
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>CV | Alvaro Aguirre</title>
+      </Head>
       <Banner />
-    </div>
+    </>
   );
 };
 
