@@ -11,9 +11,8 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   body {
-    font-family: ${theme.fontFamily};
+    font-family: ${theme.typography.fontFamilies.body};
     font-size: 16px;
-    color: ${theme.colors.black};
   }
 
   img {
