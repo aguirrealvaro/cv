@@ -69,4 +69,5 @@ const Subtitle = styled.h3`
 const Location = styled.span`
   color: ${({ theme }) => theme.colors.grey[5]};
   font-size: ${({ theme }) => theme.typography.fontSizes.lg};
+  font-weight: ${({ theme }) => theme.typography.fontWeights.medium};
 `;

@@ -45,8 +45,8 @@ export type TypographyType = {
 
 export const typography: TypographyType = {
   fontFamilies: {
-    heading: `"Segoe UI", Arial`,
-    body: `"Segoe UI", Arial`,
+    heading: `Raleway, "Segoe UI", Arial`,
+    body: `Raleway, "Segoe UI", Arial`,
     mono: `monospace`,
   },
   fontSizes: {

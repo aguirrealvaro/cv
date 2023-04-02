@@ -2,6 +2,30 @@ import { createGlobalStyle } from "styled-components";
 import { ThemeType, theme } from "./theme";
 
 export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
+  @font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway/Raleway-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway/Raleway-Medium.ttf");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway/Raleway-SemiBold.ttf");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway/Raleway-Bold.ttf");
+    font-weight: 700;
+  }
+
   *,
   *:after,
   *:before {
