@@ -57,15 +57,16 @@ const TextContainer = styled.div`
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.grey[2]};
   font-size: ${({ theme }) => theme.typography.fontSizes["3xl"]};
+  font-weight: ${({ theme }) => theme.typography.fontWeights.bold};
 `;
 
 const Subtitle = styled.h3`
   color: ${({ theme }) => theme.colors.grey[5]};
   font-size: ${({ theme }) => theme.typography.fontSizes.lg};
-  font-weight: ${({ theme }) => theme.typography.fontWeights.normal};
+  font-weight: ${({ theme }) => theme.typography.fontWeights.semibold};
 `;
 
 const Location = styled.span`
   color: ${({ theme }) => theme.colors.grey[5]};
-  font-size: ${({ theme }) => theme.typography.fontSizes.md};
+  font-size: ${({ theme }) => theme.typography.fontSizes.lg};
 `;
