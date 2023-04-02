@@ -1,4 +1,4 @@
-import Document, { Html, Main, NextScript } from "next/document";
+import Document, { Html, Main, Head, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
+        <Head>{/* <link rel="icon" href="/favicon.ico" /> */}</Head>
         <body>
           <Main />
           <NextScript />
