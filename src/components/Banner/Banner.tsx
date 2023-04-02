@@ -16,6 +16,7 @@ export const Banner: FunctionComponent = () => {
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.colors.red[5]};
 `;
 
 const AvatarContainer = styled.div`
