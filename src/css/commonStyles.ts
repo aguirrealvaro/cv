@@ -17,3 +17,23 @@ export const originalImageWitdth = css`
     height: unset !important;
   }
 `;
+
+export const Card = styled.div`
+  background-color: ${({ theme }) => theme.assets.bgSecondary};
+  padding: ${({ theme }) => theme.spacing[4]};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
+`;
+
+export const CardTitle = styled.h4`
+  color: ${({ theme }) => theme.assets.primary};
+  font-size: ${({ theme }) => theme.typography.fontSizes.lg};
+  font-weight: ${({ theme }) => theme.typography.fontWeights.medium};
+  margin-bottom: ${({ theme }) => theme.spacing[4]};
+`;
+
+export const CardParagraph = styled.p`
+  margin-bottom: ${({ theme }) => theme.spacing[4]};
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
