@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { About, Banner, Contact } from "@/components";
+import { About, Banner, Contact, Experience } from "@/components";
 import { Wrapper } from "@/css";
 
 const Home = () => {
@@ -15,6 +15,7 @@ const Home = () => {
           <Grid>
             <About />
             <Contact />
+            <Experience />
           </Grid>
         </Wrapper>
       </Main>
@@ -44,5 +45,5 @@ const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-auto-rows: 1fr;
-  grid-template-areas: "about about about contact";
+  grid-template-areas: "about about about contact" "experience experience experience experience";
 `;
