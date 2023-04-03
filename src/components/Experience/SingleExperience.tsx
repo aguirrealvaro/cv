@@ -4,7 +4,7 @@ import styled from "styled-components";
 type SingleExperienceProps = {
   role: string;
   company: string;
-  description: string;
+  description?: string;
   startTime: string;
   endTime: string;
 };
@@ -26,7 +26,7 @@ export const SingleExperience: FunctionComponent<SingleExperienceProps> = ({
       <TextContainer>
         <Role>{role}</Role>
         <Company>{company}</Company>
-        <Description>{description}</Description>
+        {description && <Description>{description}</Description>}
       </TextContainer>
     </Container>
   );
@@ -39,8 +39,7 @@ const Container = styled.div`
 const TimeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: ${({ theme }) => theme.spacing[4]};
-  width: 15%;
+  margin-right: ${({ theme }) => theme.spacing[8]};
   align-items: center;
 `;
 
@@ -52,7 +51,7 @@ const Line = styled.span`
 `;
 
 const TextContainer = styled.div`
-  width: 85%;
+  flex: 1;
 `;
 
 const Role = styled.span`
