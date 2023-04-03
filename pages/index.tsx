@@ -45,8 +45,7 @@ const Container = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  //background-color: ${({ theme }) => theme.assets.bgPrimary};
-  background-color: ${({ theme }) => theme.colors.grey[3]}; // TO DO: delete
+  background-color: ${({ theme }) => theme.assets.bgPrimary};
 `;
 
 const Grid = styled.div`
