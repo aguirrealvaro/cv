@@ -30,7 +30,36 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="es">
-        <Head>{/* <link rel="icon" href="/favicon.ico" /> */}</Head>
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/raleway/Raleway-Regular.ttf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/raleway/Raleway-Medium.ttf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/raleway/Raleway-SemiBold.ttf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/raleway/Raleway-Bold.ttf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
