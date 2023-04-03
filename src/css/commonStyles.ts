@@ -22,6 +22,7 @@ export const Card = styled.div`
   background-color: ${({ theme }) => theme.assets.bgSecondary};
   padding: ${({ theme }) => theme.spacing[4]};
   border-radius: ${({ theme }) => theme.borderRadius.md};
+  height: 100%;
 `;
 
 export const CardTitle = styled.h4`
@@ -31,7 +32,7 @@ export const CardTitle = styled.h4`
   margin-bottom: ${({ theme }) => theme.spacing[4]};
 `;
 
-export const CardParagraph = styled.p`
+export const CardText = styled.p`
   margin-bottom: ${({ theme }) => theme.spacing[4]};
   &:last-child {
     margin-bottom: 0;
