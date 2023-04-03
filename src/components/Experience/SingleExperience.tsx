@@ -20,7 +20,7 @@ export const SingleExperience: FunctionComponent<SingleExperienceProps> = ({
     <Container>
       <TimeContainer>
         <span>{endTime}</span>
-        <span>-</span>
+        <Line />
         <span>{startTime}</span>
       </TimeContainer>
       <div>
@@ -34,17 +34,16 @@ export const SingleExperience: FunctionComponent<SingleExperienceProps> = ({
 
 const Container = styled.span`
   display: flex;
-  justify-content: space-between;
 `;
 
 const TimeContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: ${({ theme }) => theme.spacing[12]};
 `;
 
 const Role = styled.span`
   display: block;
-  font-size: ${({ theme }) => theme.typography.fontSizes.lg};
   font-weight: ${({ theme }) => theme.typography.fontWeights.semibold};
   margin-bottom: ${({ theme }) => theme.spacing[1]};
 `;
@@ -59,4 +58,12 @@ const Description = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.typography.fontSizes.md};
   margin-bottom: ${({ theme }) => theme.spacing[1]};
+`;
+
+const Line = styled.span`
+  width: 1px;
+  height: 15px;
+  background-color: ${({ theme }) => theme.colors.black};
+  align-self: center;
+  margin: 4px 0;
 `;
