@@ -46,6 +46,14 @@ const ImageWrapper = styled.div`
   > span {
     margin-top: -1rem !important;
   }
+  ${({ theme }) => theme.breakpoint("md")} {
+    width: 150px;
+    height: 150px;
+  }
+  ${({ theme }) => theme.breakpoint("sm")} {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 const TextContainer = styled.div`

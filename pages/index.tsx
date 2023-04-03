@@ -54,5 +54,17 @@ const Grid = styled.div`
   display: grid;
   grid-gap: ${({ theme }) => theme.spacing[4]};
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "about about about contact" "experience experience experience skills" "education education languages languages";
+  grid-template-areas:
+    "about about about contact"
+    "experience experience experience skills"
+    "education education languages languages";
+  ${({ theme }) => theme.breakpoint("sm")} {
+    grid-template-areas:
+      "about about about about"
+      "contact contact contact contact"
+      "experience experience experience experience"
+      "skills skills skills skills"
+      "education education education education"
+      "languages languages languages languages";
+  }
 `;
