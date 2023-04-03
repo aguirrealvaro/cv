@@ -27,7 +27,7 @@ export const Experience: FunctionComponent = () => {
             role="Fullstack Web Developer"
             company="Cohiue Software"
             description="I have built different custom websites for various clients using React and Node for frontend and backend, respectively. I have also worked with relational databases to store and access important site data."
-            startTime="Sept 2019"
+            startTime="Sep 2019"
             endTime="Dec 2019"
           />
           <SingleExperience
@@ -35,7 +35,7 @@ export const Experience: FunctionComponent = () => {
             company="Freelance"
             description="Static websites developed for clients as a freelancer using HTML, CSS, and Javascript according to their needs."
             startTime="Mar 2019"
-            endTime="Sept 2019"
+            endTime="Sep 2019"
           />
         </InnerContainer>
       </Card>

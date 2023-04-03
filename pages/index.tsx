@@ -1,6 +1,14 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { About, Banner, Contact, Education, Experience, Languages } from "@/components";
+import {
+  About,
+  Banner,
+  Contact,
+  Education,
+  Experience,
+  Languages,
+  Skills,
+} from "@/components";
 import { Wrapper } from "@/css";
 
 const Home = () => {
@@ -16,6 +24,7 @@ const Home = () => {
             <About />
             <Contact />
             <Experience />
+            <Skills />
             <Education />
             <Languages />
           </Grid>
@@ -45,5 +54,5 @@ const Grid = styled.div`
   display: grid;
   grid-gap: ${({ theme }) => theme.spacing[4]};
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "about about about contact" "experience experience experience experience" "education education languages languages";
+  grid-template-areas: "about about about contact" "experience experience experience skills" "education education languages languages";
 `;
