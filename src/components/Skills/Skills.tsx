@@ -8,6 +8,9 @@ export const Skills: FunctionComponent = () => {
       <Card>
         <CardTitle>Skills</CardTitle>
         <ul>
+          <Item>HTML</Item>
+          <Item>CSS</Item>
+          <Item>Javascript</Item>
           <Item>React</Item>
           <Item>Typescript</Item>
           <Item>Next</Item>
