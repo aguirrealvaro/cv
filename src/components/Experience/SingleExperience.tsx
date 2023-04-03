@@ -62,12 +62,10 @@ const Role = styled.span`
 
 const Company = styled.span`
   display: block;
-  font-size: ${({ theme }) => theme.typography.fontSizes.md};
   margin-bottom: ${({ theme }) => theme.spacing[1]};
 `;
 
 const Description = styled.span`
   display: block;
-  font-size: ${({ theme }) => theme.typography.fontSizes.md};
   margin-bottom: ${({ theme }) => theme.spacing[1]};
 `;

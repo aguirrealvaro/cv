@@ -15,7 +15,7 @@ export const Banner: FunctionComponent = () => {
           <TextContainer>
             <Title>Alvaro Aguirre</Title>
             <div>
-              <Subtitle>Frontend developer</Subtitle>
+              <Subtitle>Frontend Developer</Subtitle>
               <Subtitle>Degree in Computer Science</Subtitle>
             </div>
             <Location>Buenos Aires, Argentina</Location>
