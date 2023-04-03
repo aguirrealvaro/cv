@@ -25,7 +25,7 @@ export const Experience: FunctionComponent = () => {
           />
           <SingleExperience
             role="Fullstack Web Developer"
-            company="Cohiue Software"
+            company="Coihue Software"
             description="I have built different custom websites for various clients using React and Node for frontend and backend, respectively. I have also worked with relational databases to store and access important site data."
             startTime="Sep 2019"
             endTime="Dec 2019"

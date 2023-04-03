@@ -46,7 +46,7 @@ const TimeContainer = styled.div`
 const Line = styled.span`
   width: 1px;
   height: 15px;
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.grey[5]};
   margin: 4px 0;
 `;
 
