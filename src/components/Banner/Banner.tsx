@@ -43,6 +43,7 @@ const ImageWrapper = styled.div`
   ${originalImageWitdth};
   border-radius: ${({ theme }) => theme.borderRadius.full};
   overflow: hidden;
+  margin-right: ${({ theme }) => theme.spacing[4]};
   > span {
     margin-top: -1rem !important;
   }
