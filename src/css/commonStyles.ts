@@ -33,7 +33,7 @@ export const CardTitle = styled.h4`
 `;
 
 export const CardText = styled.p`
-  margin-bottom: ${({ theme }) => theme.spacing[4]};
+  margin-bottom: ${({ theme }) => theme.spacing[1]};
   &:last-child {
     margin-bottom: 0;
   }
