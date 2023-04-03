@@ -23,23 +23,36 @@ export const SingleExperience: FunctionComponent<SingleExperienceProps> = ({
         <Line />
         <span>{startTime}</span>
       </TimeContainer>
-      <div>
+      <TextContainer>
         <Role>{role}</Role>
         <Company>{company}</Company>
         <Description>{description}</Description>
-      </div>
+      </TextContainer>
     </Container>
   );
 };
 
-const Container = styled.span`
+const Container = styled.div`
   display: flex;
 `;
 
 const TimeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: ${({ theme }) => theme.spacing[12]};
+  margin-right: ${({ theme }) => theme.spacing[4]};
+  width: 15%;
+  align-items: center;
+`;
+
+const Line = styled.span`
+  width: 1px;
+  height: 15px;
+  background-color: ${({ theme }) => theme.colors.black};
+  margin: 4px 0;
+`;
+
+const TextContainer = styled.div`
+  width: 85%;
 `;
 
 const Role = styled.span`
@@ -58,12 +71,4 @@ const Description = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.typography.fontSizes.md};
   margin-bottom: ${({ theme }) => theme.spacing[1]};
-`;
-
-const Line = styled.span`
-  width: 1px;
-  height: 15px;
-  background-color: ${({ theme }) => theme.colors.black};
-  align-self: center;
-  margin: 4px 0;
 `;
