@@ -6,7 +6,7 @@ export const About: FunctionComponent = () => {
   return (
     <Container>
       <Card>
-        <CardTitle>About me</CardTitle>
+        <CardTitle>About Me</CardTitle>
         <CardText>
           As a frontend developer with more than 4 years of experience working with React and
           TypeScript, and some backend skills using Node.js, I enjoy creating digital products
