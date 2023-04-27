@@ -8,14 +8,13 @@ export const Skills: FunctionComponent = () => {
       <Card>
         <CardTitle>Skills</CardTitle>
         <ul>
-          <Item>HTML</Item>
-          <Item>CSS</Item>
-          <Item>Javascript</Item>
           <Item>React</Item>
           <Item>Typescript</Item>
           <Item>Next</Item>
           <Item>React Query</Item>
           <Item>Styled Components</Item>
+          <Item>Design Systems</Item>
+          <Item>React Testing Library</Item>
           <Item>Git</Item>
           <Item>Redux</Item>
           <Item>Node</Item>
