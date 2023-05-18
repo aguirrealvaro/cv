@@ -2,7 +2,6 @@ import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { Wrapper } from "@/css";
-import { originalImageWitdth } from "@/css/commonStyles";
 
 export const Banner: FunctionComponent = () => {
   return (
@@ -10,7 +9,7 @@ export const Banner: FunctionComponent = () => {
       <Wrapper>
         <InnerContainer>
           <ImageWrapper>
-            <Image src="/images/avatar.jpg" layout="fill" alt="Alvaro Aguirre Avatar" />
+            <Image src="/images/avatar.jpg" alt="Alvaro Aguirre Avatar" fill />
           </ImageWrapper>
           <TextContainer>
             <Title>Alvaro Aguirre</Title>
@@ -40,9 +39,15 @@ const InnerContainer = styled.div`
 const ImageWrapper = styled.div`
   width: 200px;
   height: 200px;
-  ${originalImageWitdth};
-  border-radius: ${({ theme }) => theme.borderRadius.full};
   overflow: hidden;
+  position: relative; // not needed, only used to avoid warnings
+  > img {
+    position: static !important;
+    object-fit: contain;
+    height: auto !important;
+    margin-top: -${({ theme }) => theme.spacing[4]};
+  }
+  border-radius: ${({ theme }) => theme.borderRadius.full};
   margin-right: ${({ theme }) => theme.spacing[4]};
   > span {
     margin-top: -1rem !important;
