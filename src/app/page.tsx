@@ -1,4 +1,5 @@
-import Head from "next/head";
+"use client";
+
 import styled from "styled-components";
 import {
   About,
@@ -14,9 +15,6 @@ import { Wrapper } from "@/css";
 const Home = () => {
   return (
     <Container>
-      <Head>
-        <title>CV | Alvaro Aguirre</title>
-      </Head>
       <Banner />
       <Main>
         <Wrapper>

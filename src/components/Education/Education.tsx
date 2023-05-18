@@ -1,3 +1,5 @@
+"use client";
+
 import { FunctionComponent } from "react";
 import styled from "styled-components";
 import { SingleExperience } from "../Experience/SingleExperience";
