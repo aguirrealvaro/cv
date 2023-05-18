@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import { ThemeType, theme } from "./theme";
+import { theme } from "./theme";
 
-export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
+export const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: "Raleway";
     src: url("/fonts/Raleway/Raleway-Regular.ttf");
