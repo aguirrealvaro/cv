@@ -27,7 +27,7 @@ export const Banner: FunctionComponent = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.grey[8]};
   padding: ${({ theme }) => theme.spacing[6]} 0;
 `;
