@@ -15,14 +15,13 @@ export const Skills: FunctionComponent = () => {
           <Item>Next</Item>
           <Item>React Query</Item>
           <Item>Styled Components</Item>
-          <Item>Design Systems</Item>
+          <Item>Tailwind</Item>
           <Item>React Testing Library</Item>
           <Item>Git</Item>
           <Item>Redux</Item>
           <Item>Node</Item>
           <Item>Express</Item>
           <Item>Nest</Item>
-          <Item>Relational databases</Item>
         </ul>
       </Card>
     </Container>
