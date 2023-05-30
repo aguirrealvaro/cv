@@ -11,7 +11,12 @@ export const Banner: FunctionComponent = () => {
       <Wrapper>
         <InnerContainer>
           <ImageWrapper>
-            <Image src="/images/avatar.jpg" alt="Alvaro Aguirre Avatar" fill />
+            <Image
+              src="/images/avatar.jpg"
+              alt="Alvaro Aguirre Avatar"
+              width={3024}
+              height={4032}
+            />
           </ImageWrapper>
           <TextContainer>
             <Title>Alvaro Aguirre</Title>
@@ -39,28 +44,19 @@ const InnerContainer = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  position: relative; // not needed, only used to avoid warnings
   > img {
-    position: static !important;
-    object-fit: contain;
-    height: auto !important;
-    margin-top: -${({ theme }) => theme.spacing[4]};
-  }
-  border-radius: ${({ theme }) => theme.borderRadius.full};
-  margin-right: ${({ theme }) => theme.spacing[4]};
-  > span {
-    margin-top: -1rem !important;
-  }
-  ${({ theme }) => theme.breakpoint("md")} {
-    width: 150px;
-    height: 150px;
-  }
-  ${({ theme }) => theme.breakpoint("sm")} {
-    width: 100px;
-    height: 100px;
+    border-radius: ${({ theme }) => theme.borderRadius.full};
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    ${({ theme }) => theme.breakpoint("md")} {
+      width: 150px;
+      height: 150px;
+    }
+    ${({ theme }) => theme.breakpoint("xs")} {
+      width: 100px;
+      height: 100px;
+    }
   }
 `;
 
