@@ -10,5 +10,5 @@ export type Experience = {
   startDate: string;
   endDate?: string;
   roles: string[];
-  description: string;
+  description?: string;
 };

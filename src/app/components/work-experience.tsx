@@ -66,7 +66,7 @@ const WorkExperience = () => {
                 </div>
               </div>
               <H4 className="mb-0.5 flex items-center gap-2">{renderRoles()}</H4>
-              <Text>{description}</Text>
+              {description && <Text>{description}</Text>}
             </div>
           );
         })}
