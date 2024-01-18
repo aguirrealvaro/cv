@@ -2,6 +2,7 @@ import { Fragment, ReactNode } from "react";
 import { Section } from "@/components";
 import { Badge, H2, H3, H4, Text } from "@/components/ui";
 import { Company, workExperiences } from "@/config/work-experiences";
+import { cn } from "@/lib/cn";
 
 const WorkExperience = () => {
   return (
@@ -24,20 +25,29 @@ const WorkExperience = () => {
           };
 
           const renderRoles = () => {
-            return roles.map((role) => {
-              return <span key={role}>{role}</span>;
+            return roles.map((role, index) => {
+              const showArrow = index !== 0;
+
+              return (
+                <span key={role} className={cn(showArrow ? "before:content-['_→_']" : "")}>
+                  {role}
+                </span>
+              );
             });
           };
 
           return (
             <div key={company.name}>
-              <div className="flex items-center gap-2">
-                <H3>
-                  {renderCompany(company)} {subCompany ? renderCompany(subCompany) : ""}
-                </H3>
-                <Badge className="capitalize">{modality}</Badge>
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-2">
+                  <H3>
+                    {renderCompany(company)} {subCompany && <>({renderCompany(subCompany)})</>}
+                  </H3>
+                  <Badge className="capitalize">{modality}</Badge>
+                </div>
+                <div>hola!</div>
               </div>
-              <H4 className="mb-1 flex items-center gap-2">{renderRoles()}</H4>
+              <H4 className="mb-0.5 flex items-center gap-2">{renderRoles()}</H4>
               <Text>{description}</Text>
             </div>
           );
