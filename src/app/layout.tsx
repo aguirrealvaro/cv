@@ -6,7 +6,8 @@ import { ErrorBoundary } from "@/components";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
-  title: "Aguirre Alvaro | Frontend Developer",
+  title: "CV | Aguirre Alvaro ",
+  description: "Resume of Aguirre Alvaro, Frontend Developer",
 };
 
 type RootLayoutProps = {
