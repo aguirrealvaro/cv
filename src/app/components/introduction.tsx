@@ -32,6 +32,7 @@ const Introduction = () => {
           width={378}
           height={378}
           className="aspect-square size-28 rounded-xl object-cover"
+          priority
         />
       </div>
     </Section>
