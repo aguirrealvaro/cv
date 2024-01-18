@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { Section } from "@/components";
-import { Badge, H2, H3 } from "@/components/ui";
+import { Badge, H2, H3, H4, Text } from "@/components/ui";
 import { Company, workExperiences } from "@/config/work-experiences";
 
 const WorkExperience = () => {
   return (
     <Section>
       <H2 className="mb-2">Work Experience</H2>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6">
         {workExperiences.map((work) => {
-          const { company, subCompany, modality } = work;
+          const { company, subCompany, modality, roles, description } = work;
 
           const renderCompany = (company: Company): ReactNode => {
             if (company.url) {
@@ -23,6 +23,12 @@ const WorkExperience = () => {
             return <>{company.name}</>;
           };
 
+          const renderRoles = () => {
+            return roles.map((role) => {
+              return <span key={role}>{role}</span>;
+            });
+          };
+
           return (
             <div key={company.name}>
               <div className="flex items-center gap-2">
@@ -31,6 +37,8 @@ const WorkExperience = () => {
                 </H3>
                 <Badge className="capitalize">{modality}</Badge>
               </div>
+              <H4 className="mb-1 flex items-center gap-2">{renderRoles()}</H4>
+              <Text>{description}</Text>
             </div>
           );
         })}

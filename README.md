@@ -4,6 +4,7 @@
 
 - light / dark badge
 - fix subcompany
-- confirm texts
-- icons
+- fix roles arrow
+- confirm texts?
+- icons?
 - printable
