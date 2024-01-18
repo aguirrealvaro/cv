@@ -12,7 +12,7 @@ const config: Config = {
       lg: { max: "1280px" },
       md: { max: "992px" },
       sm: { max: "768px" },
-      xs: { max: "480px" },
+      xs: { max: "640px" },
     },
     extend: {
       colors: {

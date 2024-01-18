@@ -40,7 +40,7 @@ const SingleExperience = ({ experience }: ExperienceProps) => {
 
   return (
     <div key={company.name}>
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex items-center justify-between gap-4 xs:flex-col xs:items-start xs:gap-0">
         <div className="flex items-center gap-2">
           <H3>
             {renderCompany(company)} {subCompany && <>({renderCompany(subCompany)})</>}

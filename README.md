@@ -2,6 +2,5 @@
 
 ### To Do:
 
-- responsive
 - icons?
 - printable
