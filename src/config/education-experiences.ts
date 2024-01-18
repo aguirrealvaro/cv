@@ -1,6 +1,6 @@
 import type { Experience } from "@/types";
 
-export const educations: Experience[] = [
+export const educationsExperiences: Experience[] = [
   {
     company: {
       name: "Universidad de Palermo",

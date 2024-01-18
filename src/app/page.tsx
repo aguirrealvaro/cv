@@ -1,4 +1,4 @@
-import { Introduction, About, WorkExperience } from "./components";
+import { Introduction, About, WorkExperiences, EducationExperiences } from "./components";
 import { Wrapper } from "@/components";
 
 export default function Home() {
@@ -11,7 +11,8 @@ export default function Home() {
       <Wrapper>
         <Introduction />
         <About />
-        <WorkExperience />
+        <WorkExperiences />
+        <EducationExperiences />
       </Wrapper>
     </div>
   );
