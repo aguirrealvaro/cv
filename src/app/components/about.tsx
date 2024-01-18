@@ -1,9 +1,8 @@
-import { Section } from "@/components";
 import { H2, Text } from "@/components/ui";
 
 const About = () => {
   return (
-    <Section>
+    <div>
       <H2 className="mb-2">About</H2>
       <Text>
         As a frontend developer with more than 4 years of experience working with React and
@@ -12,7 +11,7 @@ const About = () => {
         writing clean and efficient code that&apos;s easy to maintain and scale. I am always
         willing to learn and stay up-to-date with the latest trends and technologies
       </Text>
-    </Section>
+    </div>
   );
 };
 

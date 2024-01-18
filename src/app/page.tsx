@@ -10,11 +10,13 @@ export default function Home() {
   return (
     <div className="my-16">
       <Wrapper>
-        <Introduction />
-        <About />
-        <WorkExperiences />
-        <EducationExperiences />
-        <Skills />
+        <div className="flex flex-col gap-8">
+          <Introduction />
+          <About />
+          <WorkExperiences />
+          <EducationExperiences />
+          <Skills />
+        </div>
       </Wrapper>
     </div>
   );

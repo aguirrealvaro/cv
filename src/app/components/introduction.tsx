@@ -1,12 +1,11 @@
 import { Globe } from "lucide-react";
 import Image from "next/image";
 import { MediaLinks } from ".";
-import { Section } from "@/components";
 import { H1, Text } from "@/components/ui";
 
 const Introduction = () => {
   return (
-    <Section className="flex items-center justify-between">
+    <div className="flex items-center justify-between">
       <div>
         <H1 className="mb-1">Alvaro Aguirre</H1>
         <div className="mb-1">
@@ -35,7 +34,7 @@ const Introduction = () => {
           priority
         />
       </div>
-    </Section>
+    </div>
   );
 };
 
