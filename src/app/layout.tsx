@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ErrorBoundary, Wrapper } from "@/components";
+import { ErrorBoundary } from "@/components";
 import { cn } from "@/lib/cn";
 
 export const metadata: Metadata = {
