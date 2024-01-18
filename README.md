@@ -2,6 +2,6 @@
 
 ### To Do:
 
-- check texts
+- confirm texts
 - icons
 - printable
