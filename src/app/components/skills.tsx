@@ -4,7 +4,7 @@ const skills = [
   "React",
   "Typescript",
   "NextJS",
-  "ReactQuery",
+  "React Query",
   "CSS-in-JS",
   "Tailwind",
   "React Testing Library",
