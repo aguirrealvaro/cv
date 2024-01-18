@@ -9,12 +9,16 @@ const Introduction = () => {
       <div>
         <H1 className="mb-1">Alvaro Aguirre</H1>
         <div className="mb-1">
-          <Text className="leading-4">Frontend Developer</Text>
-          <Text className="leading-4">Degree in Computer Science</Text>
+          <Text>Frontend Developer</Text>
+          <Text>Degree in Computer Science</Text>
         </div>
-        <div className="mb-2 flex items-center gap-2 text-xs hover:underline">
+        <div className="mb-2 flex items-center gap-2 text-xs ">
           <Globe size={14} />
-          <a href="https://maps.app.goo.gl/aPbV16G2CvPEVZwm7" target="_blank">
+          <a
+            href="https://maps.app.goo.gl/aPbV16G2CvPEVZwm7"
+            target="_blank"
+            className="hover:underline"
+          >
             <Text>Buenos Aires, Argentina</Text>
           </a>
         </div>
