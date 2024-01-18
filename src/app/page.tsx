@@ -1,7 +1,12 @@
+import { Wrapper } from "@/components";
+import { H1 } from "@/components/ui";
+
 export default function Home() {
   return (
-    <div>
-      <h1>{"In progress :)"}</h1>
+    <div className="my-16">
+      <Wrapper>
+        <H1>Alvaro Aguirre</H1>
+      </Wrapper>
     </div>
   );
 }
