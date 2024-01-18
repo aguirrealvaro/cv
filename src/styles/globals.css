@@ -11,11 +11,7 @@
     --hover-primary: rgba(0, 0, 0, 0.05);
 
     --text-heading: theme(colors.black);
-    --text-primary: theme(colors.neutral.800);
-    --text-secondary: theme(colors.neutral.600);
-
-    --disabled-primary: theme(colors.neutral.300);
-    --disabled-secondary: theme(colors.neutral.500);
+    --text-primary: theme(colors.neutral.500);
   }
 }
 
