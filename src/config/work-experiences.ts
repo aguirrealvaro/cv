@@ -1,19 +1,6 @@
-export type Company = {
-  name: string;
-  url?: string;
-};
+import type { Experience } from "@/types";
 
-type WorkExperience = {
-  company: Company;
-  subCompany?: Company;
-  modality: "remote" | "hybrid" | "on-site";
-  startDate: string;
-  endDate?: string;
-  roles: string[];
-  description: string;
-};
-
-export const workExperiences: WorkExperience[] = [
+export const workExperiences: Experience[] = [
   {
     company: {
       name: "Trafilea",

@@ -1,8 +1,9 @@
-import { Fragment, ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Section } from "@/components";
 import { Badge, H2, H3, H4, Text } from "@/components/ui";
-import { Company, workExperiences } from "@/config/work-experiences";
+import { workExperiences } from "@/config/work-experiences";
 import { cn } from "@/lib/cn";
+import type { Company } from "@/types";
 import { formatDate } from "@/utils/format-date";
 
 const WorkExperience = () => {

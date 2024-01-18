@@ -3,6 +3,6 @@
 ### To Do:
 
 - light / dark badge
-- confirm texts?
+- responsive
 - icons?
 - printable
