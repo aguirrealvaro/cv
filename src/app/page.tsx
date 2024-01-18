@@ -1,4 +1,5 @@
 import { Introduction, About, WorkExperiences, EducationExperiences } from "./components";
+import { Skills } from "@/app/components/skills";
 import { Wrapper } from "@/components";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <WorkExperiences />
         <EducationExperiences />
+        <Skills />
       </Wrapper>
     </div>
   );
