@@ -1,11 +1,12 @@
 import { Globe } from "lucide-react";
 import Image from "next/image";
 import { MediaLinks } from ".";
+import { Section } from "@/components";
 import { H1, Text } from "@/components/ui";
 
 const Introduction = () => {
   return (
-    <div className="mb-8 flex items-center justify-between">
+    <Section className="flex items-center justify-between">
       <div>
         <H1 className="mb-1">Alvaro Aguirre</H1>
         <div className="mb-1">
@@ -33,7 +34,7 @@ const Introduction = () => {
           className="aspect-square size-28 rounded-xl object-cover"
         />
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -1,10 +1,17 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Home, Linkedin, Mail, Phone } from "lucide-react";
 
 const MediaLinks = () => {
   const size = 16;
 
   return (
     <div className="flex gap-1">
+      <a
+        href="https://aguirrealvaro.dev"
+        className="rounded-md border p-2 transition-colors hover:bg-hover-primary"
+        target="_blank"
+      >
+        <Home size={size} />
+      </a>
       <a
         href="mailto:1aguirrealvaro@gmail.com"
         className="rounded-md border p-2 transition-colors hover:bg-hover-primary"
@@ -27,7 +34,7 @@ const MediaLinks = () => {
         <Github size={size} />
       </a>
       <a
-        href="https://www.linkedin.com/in/aguirrealvaro/"
+        href="https://www.linkedin.com/in/aguirrealvaro"
         className="rounded-md border p-2 transition-colors hover:bg-hover-primary"
         target="_blank"
       >
