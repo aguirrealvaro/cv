@@ -1,4 +1,4 @@
-import { Introduction, About } from "./components";
+import { Introduction, About, WorkExperience } from "./components";
 import { Wrapper } from "@/components";
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Wrapper>
         <Introduction />
         <About />
+        <WorkExperience />
       </Wrapper>
     </div>
   );
