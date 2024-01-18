@@ -3,6 +3,7 @@ import { Section } from "@/components";
 import { Badge, H2, H3, H4, Text } from "@/components/ui";
 import { Company, workExperiences } from "@/config/work-experiences";
 import { cn } from "@/lib/cn";
+import { formatDate } from "@/utils/format-date";
 
 const WorkExperience = () => {
   return (
@@ -10,7 +11,8 @@ const WorkExperience = () => {
       <H2 className="mb-2">Work Experience</H2>
       <div className="flex flex-col gap-6">
         {workExperiences.map((work) => {
-          const { company, subCompany, modality, roles, description } = work;
+          const { company, subCompany, modality, roles, description, startDate, endDate } =
+            work;
 
           const renderCompany = (company: Company): ReactNode => {
             if (company.url) {
@@ -36,6 +38,9 @@ const WorkExperience = () => {
             });
           };
 
+          const parsedStartDate = formatDate(startDate);
+          const parsedEndDate = endDate ? formatDate(endDate) : "";
+
           return (
             <div key={company.name}>
               <div className="flex items-center justify-between gap-4">
@@ -45,7 +50,19 @@ const WorkExperience = () => {
                   </H3>
                   <Badge className="capitalize">{modality}</Badge>
                 </div>
-                <div>hola!</div>
+                <div className="font-mono">
+                  <time dateTime={parsedStartDate.dateString}>
+                    {parsedStartDate.formattedDate}
+                  </time>
+                  {" - "}
+                  {parsedEndDate ? (
+                    <time dateTime={parsedEndDate.dateString}>
+                      {parsedEndDate.formattedDate}
+                    </time>
+                  ) : (
+                    "Present"
+                  )}
+                </div>
               </div>
               <H4 className="mb-0.5 flex items-center gap-2">{renderRoles()}</H4>
               <Text>{description}</Text>

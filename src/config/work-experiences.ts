@@ -39,7 +39,7 @@ export const workExperiences: WorkExperience[] = [
     endDate: "2022-12-01",
     roles: ["Frontend Developer", "Team Lead"],
     description:
-      "Software factory where I worked for different clients, primarily BlockFi, where I led a small team in the development of Trading, performing frontend tasks and launching high-impact features on the web app. I contributed to the success of the product, resulting in a significant improvement in the user experience and an increase in user engagement.",
+      "Software factory where I worked for different clients, primarily BlockFi. I led a small team in the development of Trading, performing frontend tasks and launching high-impact features on the web app. I contributed to the success of the product, resulting in a significant improvement in the user experience and an increase in user engagement.",
   },
   {
     company: {
