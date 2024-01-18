@@ -2,5 +2,4 @@
 
 ### To Do:
 
-- icons?
 - printable
