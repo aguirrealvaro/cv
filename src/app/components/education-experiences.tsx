@@ -4,7 +4,7 @@ import { educationsExperiences } from "@/config/education-experiences";
 
 const EducationExperiences = () => {
   return (
-    <div>
+    <section>
       <H2 className="mb-2">Education</H2>
       <div className="flex flex-col gap-6">
         {educationsExperiences.map((education, index) => {
@@ -16,7 +16,7 @@ const EducationExperiences = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
