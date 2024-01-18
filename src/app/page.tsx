@@ -1,4 +1,4 @@
-import { Introduction } from "@/app/components";
+import { Introduction, About } from "./components";
 import { Wrapper } from "@/components";
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
     <div className="my-16">
       <Wrapper>
         <Introduction />
+        <About />
       </Wrapper>
     </div>
   );

@@ -5,7 +5,7 @@ import { H1, Text } from "@/components/ui";
 
 const Introduction = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="mb-8 flex items-center justify-between">
       <div>
         <H1 className="mb-1">Alvaro Aguirre</H1>
         <div className="mb-1">
