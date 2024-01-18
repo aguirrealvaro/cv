@@ -2,13 +2,11 @@ import "@/styles/globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ErrorBoundary } from "@/components";
+import { ErrorBoundary, Wrapper } from "@/components";
 import { cn } from "@/lib/cn";
-import { ThemeProvider } from "@/providers";
 
 export const metadata: Metadata = {
-  title: "Next Tailwind Template",
-  description: "Description",
+  title: "Aguirre Alvaro | Frontend Developer",
 };
 
 type RootLayoutProps = {
@@ -30,13 +28,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         )}
       >
         <ErrorBoundary>
-          <ThemeProvider>
-            <div className="flex h-dvh flex-col">
-              <header>Header</header>
-              <main className="flex-1">{children}</main>
-              <footer>Footer</footer>
-            </div>
-          </ThemeProvider>
+          <div className="flex h-dvh flex-col">
+            <main className="flex-1">{children}</main>
+          </div>
         </ErrorBoundary>
       </body>
     </html>
