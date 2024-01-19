@@ -10,7 +10,7 @@ import { Wrapper } from "@/components";
 
 export default function Home() {
   return (
-    <div className="my-16">
+    <div className="my-16 sm:my-8">
       <Wrapper>
         <div className="flex flex-col gap-8">
           <Introduction />
