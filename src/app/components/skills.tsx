@@ -1,3 +1,4 @@
+import { Section } from "@/components";
 import { Badge, H2 } from "@/components/ui";
 
 const skills = [
@@ -16,8 +17,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section>
-      <H2 className="mb-2">Skills</H2>
+    <Section>
+      <H2>Skills</H2>
       <div className="flex flex-wrap items-center gap-2">
         {skills.map((skill) => {
           return (
@@ -27,7 +28,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </section>
+    </Section>
   );
 };
 

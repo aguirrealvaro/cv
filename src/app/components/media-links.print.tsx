@@ -1,9 +1,10 @@
+import { Section } from "@/components";
 import { H2 } from "@/components/ui";
 
 const MediaLinksPrint = () => {
   return (
-    <section className="hidden print:block">
-      <H2 className="mb-2">Contact</H2>
+    <Section className="hidden print:block">
+      <H2>Contact</H2>
       <div className="flex justify-between font-mono">
         <div className="flex flex-col">
           <span>1aguirrealvaro@gmail.com</span>
@@ -15,7 +16,7 @@ const MediaLinksPrint = () => {
           <span>linkedin.com/in/aguirrealvaro</span>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
