@@ -8,7 +8,7 @@ type TextProps = {
 
 const Text = ({ children, className }: TextProps) => {
   return (
-    <p className={cn("text-pretty font-mono text-text-primary text-sm", className)}>
+    <p className={cn("text-pretty font-mono text-sm text-text-primary", className)}>
       {children}
     </p>
   );

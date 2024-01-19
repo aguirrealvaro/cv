@@ -1,8 +1,7 @@
 # CV
 
-Minimalist CV
+Minimalist and Printable CV
 
 ### To Do:
 
-- printable
 - command menu: print, download pdf

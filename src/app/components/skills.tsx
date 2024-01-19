@@ -1,19 +1,6 @@
 import { Section } from "@/components";
 import { Badge, H2 } from "@/components/ui";
-
-const skills = [
-  "React",
-  "Typescript",
-  "NextJS",
-  "React Query",
-  "CSS-in-JS",
-  "Tailwind",
-  "React Testing Library",
-  "Git",
-  "NodeJS",
-  "Express",
-  "Nest",
-];
+import { skills } from "@/config/skills";
 
 const Skills = () => {
   return (
