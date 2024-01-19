@@ -1,15 +1,19 @@
-import { H3 } from "@/components/ui";
+import { H2 } from "@/components/ui";
 
 const MediaLinksPrint = () => {
   return (
     <div className="hidden print:block">
-      <H3 className="mb-1">Contacto</H3>
-      <div className="flex flex-col text-sm">
-        <span className="font-mono">aguirrealvaro.dev</span>
-        <span className="font-mono">1aguirrealvaro@gmail.com</span>
-        <span className="font-mono">+54 11 6324 7350</span>
-        <span className="font-mono">github.com/aguirrealvaro</span>
-        <span className="font-mono">linkedin.com/in/aguirrealvaro</span>
+      <H2 className="mb-2">Contact</H2>
+      <div className="flex justify-between font-mono">
+        <div className="flex flex-col">
+          <span>1aguirrealvaro@gmail.com</span>
+          <span>+54 11 6324 7350</span>
+        </div>
+        <div className="flex flex-col">
+          <span>aguirrealvaro.dev</span>
+          <span>github.com/aguirrealvaro</span>
+          <span>linkedin.com/in/aguirrealvaro</span>
+        </div>
       </div>
     </div>
   );

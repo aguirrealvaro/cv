@@ -1,4 +1,10 @@
-import { Introduction, About, WorkExperiences, EducationExperiences } from "./components";
+import {
+  Introduction,
+  About,
+  WorkExperiences,
+  EducationExperiences,
+  MediaLinksPrint,
+} from "./components";
 import { Skills } from "@/app/components/skills";
 import { Wrapper } from "@/components";
 
@@ -8,6 +14,7 @@ export default function Home() {
       <Wrapper>
         <div className="flex flex-col gap-8">
           <Introduction />
+          <MediaLinksPrint />
           <About />
           <WorkExperiences />
           <EducationExperiences />
