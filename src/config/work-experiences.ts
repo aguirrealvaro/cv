@@ -42,7 +42,7 @@ export const workExperiences: Experience[] = [
   },
   {
     company: {
-      name: "Cohiue Software",
+      name: "Coihue Software",
     },
     modality: "on-site",
     startDate: "2019-09-01",

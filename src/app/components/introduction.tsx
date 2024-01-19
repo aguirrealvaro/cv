@@ -13,12 +13,12 @@ const Introduction = () => {
           <Text>Degree in Computer Science</Text>
         </div>
         <div className="mb-2 flex items-center gap-2 text-xs ">
-          <Globe size={14} />
           <a
             href="https://maps.app.goo.gl/aPbV16G2CvPEVZwm7"
             target="_blank"
-            className="hover:underline"
+            className="flex items-center gap-2 hover:underline"
           >
+            <Globe size={14} />
             <Text>Buenos Aires, Argentina</Text>
           </a>
         </div>

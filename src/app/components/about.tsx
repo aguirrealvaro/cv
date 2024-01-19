@@ -9,7 +9,7 @@ const About = () => {
         TypeScript, and backend skills using Node, I enjoy creating digital products that
         provide a great user experience, consistency, and follow best practices. I believe in
         writing clean and efficient code that&apos;s easy to maintain and scale. I am always
-        willing to learn and stay up-to-date with the latest trends and technologies
+        willing to learn and stay up-to-date with the latest trends and technologies.
       </Text>
     </section>
   );
