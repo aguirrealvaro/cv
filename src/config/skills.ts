@@ -5,6 +5,7 @@ export const skills = [
   "React Query",
   "CSS-in-JS",
   "Tailwind",
+  "Radix",
   "React Testing Library",
   "Git",
   "NodeJS",
