@@ -1,6 +1,5 @@
 import { Globe } from "lucide-react";
-import Image from "next/image";
-import { MediaLinks } from ".";
+import { AvatarImage, MediaLinks } from ".";
 import { H1, Text } from "@/components/ui";
 
 const Introduction = () => {
@@ -24,16 +23,7 @@ const Introduction = () => {
         </div>
         <MediaLinks />
       </div>
-      <div>
-        <Image
-          alt="Picture of Alvaro Aguirre"
-          src="/avatar-square.png"
-          width={378}
-          height={378}
-          className="aspect-square size-28 rounded-xl object-cover"
-          priority
-        />
-      </div>
+      <AvatarImage />
     </section>
   );
 };
