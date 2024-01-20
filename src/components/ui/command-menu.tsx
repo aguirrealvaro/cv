@@ -42,7 +42,8 @@ const CommandMenu = () => {
           className={cn(
             "fixed inset-0 z-command-menu h-screen w-screen bg-black/20",
             "flex items-center justify-center md:items-start",
-            "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in"
+            "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in",
+            "print:hidden"
           )}
         >
           <Dialog.Content
