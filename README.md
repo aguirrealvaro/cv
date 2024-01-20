@@ -4,4 +4,5 @@ Minimalist and Printable CV
 
 ### To Do:
 
-- command menu: print, download pdf
+- download pdf
+- config links

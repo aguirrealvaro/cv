@@ -10,7 +10,6 @@ import {
   Home,
   Linkedin,
   Mail,
-  Menu,
   Printer,
   Search,
   X,
@@ -64,13 +63,14 @@ const CommandMenu = () => {
                   placeholder="Type a command or search"
                   className="w-full p-2 outline-none"
                 />
-                <Dialog.Close className="absolute right-4 top-4">
-                  <X size={18} />
-                </Dialog.Close>
+                <IconButton asChild className="absolute right-4">
+                  <Dialog.Close>
+                    <X size={18} />
+                  </Dialog.Close>
+                </IconButton>
               </div>
               <Command.Separator className="h-px bg-border-primary" />
-
-              <Command.List className="py-2">
+              <Command.List>
                 <Command.Empty className="py-6 text-center text-sm">
                   No results found.
                 </Command.Empty>
@@ -78,11 +78,24 @@ const CommandMenu = () => {
                   heading="Actions"
                   className="overflow-hidden p-1 text-text-primary [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-text-primary"
                 >
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                    onSelect={() => {
+                      setOpen(false);
+                      window.print();
+                    }}
+                  >
                     <Printer size={18} />
                     Print
                   </Command.Item>
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      // eslint-disable-next-line no-console
+                      console.log("wip");
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
                     <Download size={18} />
                     Download as PDF
                   </Command.Item>
@@ -91,19 +104,43 @@ const CommandMenu = () => {
                   heading="Links"
                   className="overflow-hidden p-1 text-text-primary [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-text-primary"
                 >
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      window.open("https://aguirrealvaro.dev", "_blank");
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
                     <Home size={18} />
                     Webiste & Blog
                   </Command.Item>
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      window.open("mailto:1aguirrealvaro@gmail.com", "_blank");
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
                     <Mail size={18} />
                     Send me an email
                   </Command.Item>
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      window.open("https://linkedin.com/in/aguirrealvaro", "_blank");
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
                     <Linkedin size={18} />
                     Linkedin
                   </Command.Item>
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      window.open("https://github.com/aguirrealvaro", "_blank");
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
                     <Github size={18} />
                     Github
                   </Command.Item>
@@ -118,5 +155,3 @@ const CommandMenu = () => {
 };
 
 export { CommandMenu };
-
-// <Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
