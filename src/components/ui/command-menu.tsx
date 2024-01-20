@@ -3,19 +3,9 @@
 import { useEffect, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Command } from "cmdk";
-import {
-  CommandIcon,
-  Download,
-  Github,
-  Home,
-  Linkedin,
-  Mail,
-  Phone,
-  Printer,
-  Search,
-  X,
-} from "lucide-react";
+import { CommandIcon, Download, Printer, Search, X } from "lucide-react";
 import { IconButton } from "@/components/ui";
+import { links } from "@/config/links";
 import { cn } from "@/lib/cn";
 
 const CommandMenu = () => {
@@ -46,6 +36,7 @@ const CommandMenu = () => {
           <CommandIcon />
         </IconButton>
       </Dialog.Trigger>
+
       <Dialog.Portal>
         <Dialog.Overlay
           className={cn(
@@ -110,59 +101,21 @@ const CommandMenu = () => {
                   heading="Links"
                   className="overflow-hidden p-1 text-text-primary [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-text-primary"
                 >
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      window.open("https://aguirrealvaro.dev", "_blank");
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Home size={18} />
-                    Webiste & Blog
-                  </Command.Item>
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      window.open("mailto:1aguirrealvaro@gmail.com", "_blank");
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Mail size={18} />
-                    Email
-                  </Command.Item>
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      window.open(
-                        "https://api.whatsapp.com/send?phone=5491163247350",
-                        "_blank"
-                      );
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Phone size={18} />
-                    Whatsapp
-                  </Command.Item>
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      window.open("https://linkedin.com/in/aguirrealvaro", "_blank");
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Linkedin size={18} />
-                    Linkedin
-                  </Command.Item>
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      window.open("https://github.com/aguirrealvaro", "_blank");
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Github size={18} />
-                    Github
-                  </Command.Item>
+                  {links.map(({ url, icon: Icon, label }) => {
+                    return (
+                      <Command.Item
+                        key={url}
+                        onSelect={() => {
+                          setOpen(false);
+                          window.open(url, "_blank");
+                        }}
+                        className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                      >
+                        <Icon size={18} />
+                        {label}
+                      </Command.Item>
+                    );
+                  })}
                 </Command.Group>
               </Command.List>
             </Command>
