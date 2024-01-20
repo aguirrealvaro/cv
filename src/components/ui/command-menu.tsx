@@ -37,23 +37,28 @@ const CommandMenu = () => {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
-        <IconButton className="fixed bottom-12 right-12 z-10 rounded-full border shadow-2xl">
+        <IconButton
+          className={cn(
+            "fixed bottom-12 right-12 z-command-button sm:bottom-6 sm:right-6",
+            "rounded-full border bg-white shadow-2xl"
+          )}
+        >
           <CommandIcon />
         </IconButton>
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay
           className={cn(
-            "fixed inset-0 z-20 h-screen w-screen bg-black/20",
+            "fixed inset-0 z-command-menu h-screen w-screen bg-black/20",
             "flex items-center justify-center",
             "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in"
           )}
         >
           <Dialog.Content
             className={cn(
-              "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in",
               "max-h-[80vh] min-h-28 w-full max-w-[32rem] rounded-lg bg-white shadow-lg",
-              "overflow-y-auto p-2"
+              "mx-4 overflow-y-auto p-2",
+              "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in"
             )}
           >
             <Dialog.Title className="sr-only">Command Menu</Dialog.Title>

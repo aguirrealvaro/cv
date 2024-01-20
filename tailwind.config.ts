@@ -50,6 +50,10 @@ const config: Config = {
         "fade-in": "fade-in 150ms ease-in-out forwards",
         "fade-out": "fade-out 150ms ease-in-out forwards",
       },
+      zIndex: {
+        "command-button": "1",
+        "command-menu": "2",
+      },
     },
   },
   plugins: [],
