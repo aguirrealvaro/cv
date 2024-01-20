@@ -30,7 +30,8 @@ const CommandMenu = () => {
         <IconButton
           className={cn(
             "fixed bottom-12 right-12 z-command-button sm:bottom-6 sm:right-6",
-            "rounded-full border bg-white shadow-2xl"
+            "rounded-full border bg-white shadow-2xl",
+            "print:hidden"
           )}
         >
           <CommandIcon />
