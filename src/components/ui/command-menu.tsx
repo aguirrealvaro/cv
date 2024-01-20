@@ -53,7 +53,7 @@ const CommandMenu = () => {
             className={cn(
               "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in",
               "max-h-[80vh] min-h-28 w-full max-w-[32rem] rounded-lg bg-white shadow-lg",
-              "overflow-y-auto"
+              "overflow-y-auto p-2"
             )}
           >
             <Dialog.Title className="sr-only">Command Menu</Dialog.Title>
@@ -62,7 +62,7 @@ const CommandMenu = () => {
                 <Search size={18} />
                 <Command.Input
                   placeholder="Type a command or search"
-                  className="w-full py-2 outline-none"
+                  className="w-full p-2 outline-none"
                 />
                 <Dialog.Close className="absolute right-4 top-4">
                   <X size={18} />
@@ -70,7 +70,7 @@ const CommandMenu = () => {
               </div>
               <Command.Separator className="h-px bg-border-primary" />
 
-              <Command.List>
+              <Command.List className="py-2">
                 <Command.Empty className="py-6 text-center text-sm">
                   No results found.
                 </Command.Empty>
@@ -78,11 +78,11 @@ const CommandMenu = () => {
                   heading="Actions"
                   className="overflow-hidden p-1 text-text-primary [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-text-primary"
                 >
-                  <Command.Item className="mx-2 flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Printer size={18} />
                     Print
                   </Command.Item>
-                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-3 py-3.5 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Download size={18} />
                     Download as PDF
                   </Command.Item>
@@ -91,19 +91,19 @@ const CommandMenu = () => {
                   heading="Links"
                   className="overflow-hidden p-1 text-text-primary [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-text-primary"
                 >
-                  <Command.Item className="mx-2 flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Home size={18} />
                     Webiste & Blog
                   </Command.Item>
-                  <Command.Item className="mx-2 flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Mail size={18} />
                     Send me an email
                   </Command.Item>
-                  <Command.Item className="mx-2 flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Linkedin size={18} />
                     Linkedin
                   </Command.Item>
-                  <Command.Item className="mx-2 flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
+                  <Command.Item className="flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary">
                     <Github size={18} />
                     Github
                   </Command.Item>
