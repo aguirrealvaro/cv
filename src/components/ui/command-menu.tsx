@@ -10,6 +10,7 @@ import {
   Home,
   Linkedin,
   Mail,
+  Phone,
   Printer,
   Search,
   X,
@@ -122,7 +123,20 @@ const CommandMenu = () => {
                     className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
                   >
                     <Mail size={18} />
-                    Send me an email
+                    Email
+                  </Command.Item>
+                  <Command.Item
+                    onSelect={() => {
+                      setOpen(false);
+                      window.open(
+                        "https://api.whatsapp.com/send?phone=5491163247350",
+                        "_blank"
+                      );
+                    }}
+                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
+                  >
+                    <Phone size={18} />
+                    Whatsapp
                   </Command.Item>
                   <Command.Item
                     onSelect={() => {
