@@ -29,16 +29,26 @@ const config: Config = {
         text: {
           heading: "var(--text-heading)",
           primary: "var(--text-primary)",
-          secondary: "var(--text-secondary)",
-        },
-        disabled: {
-          primary: "var(--disabled-primary)",
-          secondary: "var(--disabled-secondary)",
+          placeholder: "var(--text-placeholder)",
         },
       },
       fontFamily: {
         heading: "var(--font-inter)",
         body: "var(--font-inter)",
+      },
+      keyframes: {
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        "fade-out": {
+          from: { opacity: "1" },
+          to: { opacity: "0" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 150ms ease-in-out forwards",
+        "fade-out": "fade-out 150ms ease-in-out forwards",
       },
     },
   },

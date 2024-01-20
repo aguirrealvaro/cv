@@ -12,6 +12,7 @@
 
     --text-heading: theme(colors.black);
     --text-primary: theme(colors.neutral.500);
+    --text-placeholder: theme(colors.neutral.400);
   }
 }
 

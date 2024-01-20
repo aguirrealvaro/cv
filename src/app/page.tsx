@@ -7,6 +7,7 @@ import {
 } from "./components";
 import { Skills } from "@/app/components/skills";
 import { Wrapper } from "@/components";
+import { CommandMenu } from "@/components/ui";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <WorkExperiences />
           <EducationExperiences />
           <Skills />
+          <CommandMenu />
         </div>
       </Wrapper>
     </div>

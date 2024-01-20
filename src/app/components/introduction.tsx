@@ -18,7 +18,7 @@ const Introduction = () => {
             target="_blank"
             className="flex items-center gap-2 hover:underline"
           >
-            <Globe size={14} className="print:hidden" />
+            <Globe size={14} />
             <Text>Buenos Aires, Argentina</Text>
           </a>
         </div>
