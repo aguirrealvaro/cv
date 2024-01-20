@@ -2,6 +2,7 @@
 
 import * as Avatar from "@radix-ui/react-avatar";
 import Image from "next/image";
+import { cn } from "@/lib/cn";
 
 const AvatarImage = () => {
   return (
@@ -16,7 +17,13 @@ const AvatarImage = () => {
           priority
         />
       </Avatar.Image>
-      <Avatar.Fallback className="flex h-full w-full items-center justify-center rounded-xl bg-neutral-300" />
+      <Avatar.Fallback
+        asChild
+        className={cn(
+          "aspect-square size-28 rounded-xl object-cover",
+          "flex items-center justify-center bg-neutral-200"
+        )}
+      ></Avatar.Fallback>
     </Avatar.Root>
   );
 };
