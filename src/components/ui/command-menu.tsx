@@ -50,14 +50,14 @@ const CommandMenu = () => {
         <Dialog.Overlay
           className={cn(
             "fixed inset-0 z-command-menu h-screen w-screen bg-black/20",
-            "flex items-center justify-center",
+            "flex items-center justify-center md:items-start",
             "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in"
           )}
         >
           <Dialog.Content
             className={cn(
-              "max-h-[80vh] min-h-28 w-full max-w-[32rem] rounded-lg bg-white shadow-lg",
-              "mx-4 overflow-y-auto p-2",
+              "max-h-[80vh] min-h-28 w-full max-w-[32rem] overflow-y-auto",
+              "m-4 rounded-lg bg-white p-2 shadow-lg",
               "data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in"
             )}
           >
