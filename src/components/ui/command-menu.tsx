@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Command } from "cmdk";
-import { CommandIcon, Download, Printer, Search, X } from "lucide-react";
+import { CommandIcon, Printer, Search, X } from "lucide-react";
 import { IconButton } from "@/components/ui";
 import { links } from "@/config/links";
 import { cn } from "@/lib/cn";
@@ -86,17 +86,6 @@ const CommandMenu = () => {
                   >
                     <Printer size={18} />
                     Print
-                  </Command.Item>
-                  <Command.Item
-                    onSelect={() => {
-                      setOpen(false);
-                      // eslint-disable-next-line no-console
-                      console.log("wip");
-                    }}
-                    className="flex cursor-pointer select-none items-center gap-2 rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-hover-primary"
-                  >
-                    <Download size={18} />
-                    Download as PDF
                   </Command.Item>
                 </Command.Group>
                 <Command.Group
