@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter } from "./fonts";
 import { ErrorBoundary } from "@/components";
 import { cn } from "@/lib/cn";
 
@@ -14,16 +14,14 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn("bg-bg-primary text-text-primary antialiased", `${inter.className}`)}
+        className={cn(
+          "bg-bg-primary text-text-primary antialiased",
+          `${inter.variable} font-body`
+        )}
       >
         <ErrorBoundary>
           <div className="flex h-dvh flex-col">
