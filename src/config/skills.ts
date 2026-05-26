@@ -1,11 +1,10 @@
 export const skills = [
   "React",
   "Typescript",
+  "TanStack",
   "NextJS",
-  "React Query",
   "CSS-in-JS",
   "TailwindCSS",
-  "React Testing Library",
   "Radix",
   "Git",
   "NodeJS",
