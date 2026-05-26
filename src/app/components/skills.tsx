@@ -6,15 +6,15 @@ const Skills = () => {
   return (
     <Section>
       <H2>Skills</H2>
-      <div className="flex flex-wrap items-center gap-2">
+      <ul className="flex flex-wrap items-center gap-2">
         {skills.map((skill) => {
           return (
-            <Badge key={skill} variant="dark">
-              {skill}
-            </Badge>
+            <li key={skill}>
+              <Badge variant="dark">{skill}</Badge>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </Section>
   );
 };
