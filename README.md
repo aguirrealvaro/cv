@@ -2,6 +2,6 @@
 
 Minimalist and Printable CV
 
-### To Do:
+### to do:
 
 - download pdf
